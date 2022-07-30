@@ -1,5 +1,6 @@
 package com.project.dto;
 
+import com.project.event.OrderStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
