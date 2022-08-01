@@ -7,8 +7,8 @@ import java.util.UUID;
 
 public class OrderEvent {
 
-    private UUID eventId=UUID.randomUUID();
-    private Date eventDate=new Date();
+    private UUID eventId = UUID.randomUUID();
+    private Date eventDate = new Date();
     private OrderRequestDTO orderRequestDto;
     private OrderStatus orderStatus;
 
