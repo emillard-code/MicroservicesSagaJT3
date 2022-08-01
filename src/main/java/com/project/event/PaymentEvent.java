@@ -1,11 +1,29 @@
 package com.project.event;
 
+import com.project.dto.PaymentRequestDTO;
+
 import java.util.Date;
 import java.util.UUID;
 
-public class PaymentEvent {
+public class PaymentEvent implements Event {
 
     private UUID eventId=UUID.randomUUID();
     private Date eventDate = new Date();
+    private PaymentRequestDTO paymentRequestDto;
+    private PaymentStatus paymentStatus;
+
+    @Override
+    public UUID getEventId() {
+
+        return eventId;
+
+    }
+
+    @Override
+    public Date getDate() {
+
+        return eventDate;
+
+    }
 
 }
