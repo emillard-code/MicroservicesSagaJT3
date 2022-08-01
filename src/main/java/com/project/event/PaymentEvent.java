@@ -12,6 +12,13 @@ public class PaymentEvent implements Event {
     private PaymentRequestDTO paymentRequestDto;
     private PaymentStatus paymentStatus;
 
+    public PaymentEvent(PaymentRequestDTO paymentRequestDto, PaymentStatus paymentStatus) {
+
+        this.paymentRequestDto = paymentRequestDto;
+        this.paymentStatus = paymentStatus;
+
+    }
+
     @Override
     public UUID getEventId() {
 
