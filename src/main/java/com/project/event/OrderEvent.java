@@ -12,6 +12,13 @@ public class OrderEvent implements Event {
     private OrderRequestDTO orderRequestDto;
     private OrderStatus orderStatus;
 
+    public OrderEvent(OrderRequestDTO orderRequestDto, OrderStatus orderStatus) {
+
+        this.orderRequestDto = orderRequestDto;
+        this.orderStatus = orderStatus;
+
+    }
+
     @Override
     public UUID getEventId() {
 
